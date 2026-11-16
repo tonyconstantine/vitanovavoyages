@@ -7,10 +7,9 @@
 <meta name="description" content="Vitanova Voyages test page. The site at vitanovavoyages.com is online.">
 <style>
   :root {
-    --ink: #10243a;
-    --sea: #1a6b84;
-    --sand: #f3efe7;
-    --gold: #b8956a;
+    --ink: #f6f1e8;
+    --sea: #d7c4a2;
+    --gold: #e2c48a;
   }
   * { box-sizing: border-box; margin: 0; }
   html, body { height: 100%; }
@@ -22,10 +21,20 @@
     font-family: Georgia, "Times New Roman", serif;
     color: var(--ink);
     background:
-      radial-gradient(900px 420px at 50% -8%, #d5ebe4, transparent 62%),
-      var(--sand);
+      linear-gradient(180deg, rgba(6, 10, 18, 0.22), rgba(6, 10, 18, 0.38)),
+      url("vita-nova.jpg") center center / cover no-repeat;
+    background-color: #070b12;
   }
-  main { width: min(36rem, 100%); text-align: center; }
+  main {
+    width: min(36rem, 100%);
+    min-width: 0;
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: rgba(8, 12, 20, 0.46);
+    border: 1px solid rgba(246, 241, 232, 0.16);
+    backdrop-filter: blur(8px);
+  }
   .kicker {
     font: 600 .78rem/1 system-ui, sans-serif;
     letter-spacing: .16em;
@@ -34,10 +43,17 @@
   }
   h1 {
     margin: .7rem 0 .85rem;
-    font-size: clamp(2.4rem, 8vw, 4.1rem);
+    font-size: clamp(1.85rem, 6.2vw, 4.1rem);
+    max-width: 100%;
     font-weight: 500;
     letter-spacing: -.02em;
     line-height: .95;
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 480px) {
+    body { padding: 1.25rem .9rem; }
+    main { padding: 1.4rem 1rem; }
+    h1 { font-size: clamp(1.7rem, 8vw, 2.35rem); }
   }
   .rule {
     width: 3.5rem;
@@ -52,7 +68,7 @@
   .meta {
     margin-top: 2rem;
     font: .9rem/1.4 system-ui, sans-serif;
-    color: #5c6b78;
+    color: #d9d0c4;
   }
 </style>
 </head>

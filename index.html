@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitanova Voyages</title>
+<meta name="description" content="Vitanova Voyages test page. The site at vitanovavoyages.com is online.">
+<style>
+  :root {
+    --ink: #10243a;
+    --sea: #1a6b84;
+    --sand: #f3efe7;
+    --gold: #b8956a;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.25rem;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background:
+      radial-gradient(900px 420px at 50% -8%, #d5ebe4, transparent 62%),
+      var(--sand);
+  }
+  main { width: min(36rem, 100%); text-align: center; }
+  .kicker {
+    font: 600 .78rem/1 system-ui, sans-serif;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--sea);
+  }
+  h1 {
+    margin: .7rem 0 .85rem;
+    font-size: clamp(2.4rem, 8vw, 4.1rem);
+    font-weight: 500;
+    letter-spacing: -.02em;
+    line-height: .95;
+  }
+  .rule {
+    width: 3.5rem;
+    height: 2px;
+    margin: 0 auto 1.25rem;
+    background: var(--gold);
+  }
+  .lead {
+    font-size: clamp(1.05rem, 3vw, 1.25rem);
+    line-height: 1.5;
+  }
+  .meta {
+    margin-top: 2rem;
+    font: .9rem/1.4 system-ui, sans-serif;
+    color: #5c6b78;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">Test page</p>
+  <h1>Vitanova Voyages</h1>
+  <div class="rule" aria-hidden="true"></div>
+  <p class="lead">This is a placeholder. The site is online and ready for the real pages.</p>
+  <p class="meta">vitanovavoyages.com</p>
+</main>
+</body>
+</html>
